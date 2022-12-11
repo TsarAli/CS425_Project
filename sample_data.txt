@@ -1,0 +1,72 @@
+insert into library_member values
+(1, 'Gina', 'Rinehart', '615-671-3047', 'gr@gmail.com', '3222 State Rt 11
+', 'NYC' 'NY', '12953-4019', 5/6/2011, 1584655801, NULL, NULL, NULL), 
+(2, 'Shiv', 'Nadar', '371-256-6444', 'sn@gmail.com', '41 Anawana Lake Road', 'NYC' 'NY', '12701-1038', 4/2/2012, 1411665309, NULL, NULL, NULL),
+(3, 'Jim', 'Simons', '901-237-1519', 'js@gmail.com', '1201 Rt 300', 'NYC' 'NY', '12550-9099', 6/20/2012, NULL, NULL, 1010012310, NULL),
+(4, 'He', 'Xiangjian', '423-791-3967', 'hx@gmai.com', '2400 Route 9', 'NYC' 'NY', '12524-5555', 6/4/2015, NULL, NULL, NULL, 101325252)
+(5, 'Miriam', 'Adelson', '731-506-6562', 'ma@gmail.com', '30 Catskill', 'NYC' 'NY', '12514-3473', 1/1/2016, 094180755, NULL, NULL, NULL),
+(6, 'Dietrich', 'Mateschitz', '731-256-9338', 'dm@gmail.com', '601 Frank Stottile Blvd', 'NYC' 'NY', '12401-4273', 5/10/2016, NULL, 29499236, NULL, NULL),
+(7, 'Leonardo', 'Vecchio', '901-203-0295', 'lv@gmail.com', '200 Dutch Meadows Ln', 'NYC' 'NY', '12302-8872', 2/28/2018, NULL, NULL, NULL, 23984442219),
+(8, 'Ken', 'Griffin', '731-256-7209', 'kg@gmail.com', '141 Washington Ave Extension', 'NYC' 'NY', '12205-7987', 11/11/2021, 1890995525, NULL, NULL, NULL),
+(9, 'Tadashi', 'Yanai', '865-963-0366', 'ty@gmail.com', '579 Troy-Schenectady Road', 'NYC' 'NY', '12110-7298', 11/29/2021, NULL, 33857864, NULL, NULL),
+(10, 'William', 'Ding', '901-458-2010', 'wd@gmail.com', '233 5th Ave Ext', 'NYC' 'NY', '12095-1123', 5/6/2022, NULL, NULL, 0093655583, NULL);
+
+insert into librarian values
+(1, 'Lakshmi', 'Mittal', '615-671-3047', 'lm@gmail.com', '101 Sanford Farm Shpg Center', 'NYC', 'NY', '12010-3737', 5/2/2013),
+(2, 'Andrew', 'Forrest', '371-256-6444', 'af@gmail.com', '750 Middle Country Road', 'NYC', 'NY', '11953-2734', 5/6/2013),
+(3, 'Jiang', 'Rensheng', '901-237-1519', 'jr@gmail.com', '200 Sunrise Mall', 'NYC', 'NY', '11758-3i38', 10/7/2014),
+(4, 'Savitri', 'Jindal', '423-791-3967', 'sj@gmail.com', '901 Route 110', 'NYC', 'NY', '11735-3848', 8/6/2015),
+(5, 'Wang', 'Wenyin', '731-506-6562', 'ww@gmail.com', '785 Crooked Hill Road', 'NYC', 'NY', '11725-2929', 10/1/2015),
+(6, 'Li', 'Xiting', '731-256-9338', 'lx@gmail.com', '161 Centereach Mall', 'NYC', 'NY', '11720-8989', 10/2/2015),
+(7, 'Stefan', 'Persson', '901-203-0295', 'sp@gmail.com', '2465 Hempstead Turnpike', 'NYC', 'NY', '11554-1728', 1/3/2016),
+(8, 'Steve', 'Cohen', '731-256-7209', 'sc@gmail.com', '288 Larkin', 'NYC', 'NY', '11950-7332', 9/22/2017),
+(9, 'Vladimir', 'Potanin', '865-963-0366', 'vp@gmail.com', '470 Route 211 East', 'NYC', 'NY', '11940-2737', 5/18/2019),
+(10, 'Harold', 'Hamm', '901-458-2010', 'hh@gmail.com', '250 Rt 59', 'NYC', 'NY', '10901-2371', 7/11/2021); 
+
+insert into books values
+(851621813, 'The Complete Theory Fun Factory: Music Theory Puzzles and Games for the Early Grades', 'Katie', 'Elliott', 'Boosey & Hawkes Inc', 6/1/04, 12/1/2022),
+(862431352, 'Delwau Duon: Peintiadau Nicholas Evans = Symphonies in Black: The Paintings of Nicholas Evans', 'Rhonda', 'Evans', 'Y Lolfa', 6/22/87, 5/21/2022),
+(1584655801, 'Oliver Wendell Holmes in Paris: Medicine  Theology  and the Autocrat of the Breakfast Table', 'William', 'Dowling', 'University Press of New England', 2/28/07, 10/2/2022),
+(1590529626, 'His Princess Devotional: A Royal Encounter With Your King', 'Sheri', 'Shepherd', 'Multnomah', 10/16/07, 10/28/2022),
+(1890995525, 'The Diamond Color Meditation: Color Pathway to the Soul', 'John', 'Diamond', 'Square One Publishers', 2/1/06, 11/04/2022),
+(1930901356, 'The Irish Anatomist: A Study of Flann O Brien', 'Keith', 'Donohue', 'Academica Press', 7/25/03, 11/01/2022),
+(089096940, 'The American Campaign: U.S. Presidential Campaigns and the National Vote', 'James', 'Campbell', 'Texas A&M University Press', 5/1/00, 9/22/2022),
+(382960226, 'Willem de Kooning: Late Paintings', 'Julie', 'Sylvester', 'Schirmer Mosel', 9/1/06, 10/10/2022),
+(1411665309, 'Existential Meditation', 'Simon', 'Cleveland', 'Lulu.com', 12/22/05, 9/30/2022),
+(094180755, 'Little Big Book for God's Children', 'Alice', 'Wong', 'Welcome Books', 9/1/01, 8/1/2022);
+
+insert into magazine values 
+(031784', 'Motortrend', 5, '10/1/2022', 'Bill Jacobs', 'Philip Wright', '11/22/2022'), 
+(55551487, '+972', 7, '11/27/2010', 'Benjamin Cohen', 'Robert Williams', '11/28/2022'), 
+(87945555, 'Animal Life', 2, '11/20/2022', 'Sean Richards', 'Kim Possible', '11/30/2022'), 
+(33857864, 'Land Care', 20, '10/28/2020', 'Johnathon Brown', 'Ben Kingsley', '11/20/2022'), 
+(89623282, 'Top Gear', 100, '11/25/2022', 'Jeremy Clarkson', 'James May', '11/27/2022'),
+(84574536, 'Empires Monthly', 1000, '10/2/1900', 'Edward VII', 'Wilhelm II', '11/28/2022'), 
+(43625722, 'France Weekly', 30, '8/26/2009', 'Napoleon Bonaparte', 'Marie Antoinette', '8/30/2022'), 
+(53627757, 'Electronics Magazine', 63, '11/27/2022', 'Linus Sebastian', 'Terrance', '12/1/2022'), 
+(32855987, 'Apple Monthly', 167, '1/01/2022', 'Steve Jobs', 'Tim Cook', '11/15/2022'), 
+(29499236, 'Android Weekly', 850, '3/03/2020', 'Barack Obama', 'Boris Johnson', '3/05/2020');
+
+inset into journal values 
+(1294823717, 'World Power and Gender', 3, 'Terrence Adams', 'Jesse Holland', '08/11/2019'), 
+(2382482573, 'Public Health and Medicine', 2, 'Marcos Crawford', 'Nadia Hess', '09/18/2018'), 
+(82738100427, 'Global Ethics', 3, 'Britney Mullins', 'Shirley Dunn', '03/17/2022'), 
+(8827625189, 4, 'Magic and Reptiles', 'Edwin Carson', 'Katelyn Huber', '07/23/2011'), 
+(0091876151, 'Social Terrorism', 4, 'Shea Nixon', 'Jamie Giles', '06/29/2022'), 
+(9972635109, 'Grave Robbing 101', 2, 'Sarai Hartman', 'Jack Ramsey', '12/08/2016'), 
+(9981443622, 'Marriage and Management', 1, 'Juan Hubbard', 'Braxton Hayes', '09/09/2009'), 
+(9902874262, 'How to Not Die', 3, 'Ashley Marquez', 'Ireland Weeks', '06/19/2013'), 
+(0093655583, 'Modern Monarchies', 3, 'Christian Wilkins', 'Nadia Hess', 'Caitlyn Ponce', '07/20/2020');
+
+INSERT INTO journal_article
+VALUES(1010012310, 'Nicole', 'Claudiu', 'The Case for Addressing Gender and Power in Sexuality And HIV Education', 'World Power and Gender'), 
+(101325252, 'Claudiu', 'Cicea', 'Green Spaces and Public Health in Urban Areas', 'Public Health and Medicine'), 
+(4738239439, 'Amelia', 'Weiss', 'Trials of Fire', 'Global Ethics'), 
+(3294219553, 'Leroy', 'Caldwell', 'The Title in the Dusk', 'Global Ethics'), 
+(2348847200, 'Ally', 'May', 'Spell and the Serpent', 'Magic and Reptiles'), 
+(1372229326, 'Davion', 'Hayes', 'The Devil's Trap', 'Social Terrorism'), 
+(2383472473, 'Julien', 'James', 'The Unnatural Cadaver', 'Grave Robbing 101'), 
+(2377538294, 'Ruby', 'Keith', 'Death of the One-Toed Falcon'), 
+(23984442219, 'Matthew', 'Walls', 'Playground Bride', 'Marriage and Management'), 
+(2372321149, 'Ally', 'May', 'The Amber Bluebird', 'How to Not Die'), 
+(23788813724, 'Roy', 'Ware', 'The Throne of the Cursed', 'Modern Monarchies');
