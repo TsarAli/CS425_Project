@@ -1,0 +1,78 @@
+create database Library_mgnt;
+ 
+create table library_member
+(m_ID   				 integer not null,
+ m_FirstName   			 varchar(20) not null,
+ m_LastName   			 varchar(20) not null,
+ m_phoneNumber   			 varchar(10),
+ m_email   				 varchar(30),
+ m_street_address   		 varchar(50),
+ m_city   				 varchar(50),
+ m_state   				 varchar(25),
+ m_zipcode   			 varchar(20),
+ date_signed_up   		 Date,
+ last_book_checked_out   	 integer,
+ last_mag_checked_out   	 integer,
+ last_journ_checked_out   	 integer,
+ last_jart_checked_out   	 integer,       -- journal article
+ primary key (m_ID),
+ foreign key (last_book_checked_out) references books(isbn),
+ foreign key (last_mag_checked_out) references magazine(issn),
+ foreign key (last_journ_checked_out) references journal(doi),
+ foreign key (last_jart_checked_out) references journal_article(doi)
+);
+
+create table librarian
+(l_ID   				integer not null,
+ l_FirstName   			varchar(100) not null,
+ l_LastName   			varchar(100) not null,
+ l_phoneNumber   			varchar(10),
+ l_email   				varchar(50),
+ l_street_name   			varchar(50),
+ l_city   				varchar(50),
+ l_state   				varchar(25),
+ l_zipcode   			varchar(20),
+ date_of_employment   		Date,
+ primary key (l_ID)
+);
+
+create table books 
+(isbn					integer not null,
+book_title				varchar(200),
+author_firstname			varchar(100) not null,
+author_lastname			varchar(100) not null,
+publisher				varchar(200),
+release_date			Date,
+last_date_rented			Date,
+primary key (isbn),
+);
+
+create table magazine
+(issn 					integer not null,
+ magazine_name				varchar(100) not null,
+ issue_number 				integer,
+ date_issued 				Date,
+ editor					varchar(100) not null,
+ contributor				varchar(100),
+ last_date_rented			Date,
+ primary key (issn)
+);
+
+create table Journal 
+(doi 					integer not null,
+ title				varchar(200),
+ issue_number 			integer,
+ editor				varchar(100),
+ contributor			varchar(100),
+ last_date_rented			Date,
+ primary KEY (doi)
+ );
+
+create table journal_article 
+(doi					integer,
+author_firstName			varchar(100),
+author_lastName			varchar(100),
+title					varchar(200),
+journal				varchar(200),
+primary key (doi)
+);
